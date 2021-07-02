@@ -78,7 +78,7 @@ while True:
 
     #choosing whose turn first randomly
     turn = choose_first()
-    print(turn + 'will go first.')
+    print(turn + ' will go first.')
 
     #ask whether to start or end, if yes continue or else end the game
     play_game = input('Are you ready to play? Y or N.')
