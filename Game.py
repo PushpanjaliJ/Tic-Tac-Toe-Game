@@ -86,6 +86,13 @@ while True:
         game_on = True
     else:
         game_on = False
+        
+    #if yes to play the game, starting with the turns
+    #initially display the board and let the player choose the empty position on grid
+    #then place the respective marker on the grid
+    #check the win condition. If yes, stop the game and return the winner
+    #and also check if the game is tie without any empty positions
+    #if none of these cases succeed, then change the turn of the player
     while game_on:
         if turn == 'Player 1':
             display_board(theBoard)
@@ -117,5 +124,7 @@ while True:
                     break
                 else:
                     turn = 'Player 1'
+                    
+    #ask whether they want to replay
     if not replay():
         break
